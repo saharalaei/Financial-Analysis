@@ -49,16 +49,17 @@ print("----------------------------")
 print(f"Total Months: {month_count}")
 print(f"Total: ${net_total}")
 print(f"Average  Change: ${average_change}")
-print(f"Greatest Increase in Profits: {date_increase} ${greatest_increase}")
-print(f"Greatest Decrease in Profits: {date_decrease} ${greatest_decrease}")
+print(f"Greatest Increase in Profits: {date_increase} (${greatest_increase})")
+print(f"Greatest Decrease in Profits: {date_decrease} (${greatest_decrease})")
+print("----------------------------")
 
 
 # Print the results on the output text file
 
 with open(output_path,'w') as output:
-   output.write('{}\n{}\n{}\n{}\n{}\n{}\n{}\n'.format("Financial Analysis","----------------------------",f"Total Months: {month_count}",
-   f"Total: ${net_total}",f"Average  Change: ${average_change}",f"Greatest Increase in Profits: {date_increase} ${greatest_increase}",
-   f"Greatest Decrease in Profits: {date_decrease} ${greatest_decrease}"))
+   output.write('{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n'.format("Financial Analysis","----------------------------",f"Total Months: {month_count}",
+   f"Total: ${net_total}",f"Average  Change: ${average_change}",f"Greatest Increase in Profits: {date_increase} (${greatest_increase})",
+   f"Greatest Decrease in Profits: {date_decrease} (${greatest_decrease})","----------------------------"))
  
     
     
